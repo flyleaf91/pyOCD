@@ -1,0 +1,553 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pass",
+				"password	statement"
+			],
+			[
+				"bui",
+				"builtins	module"
+			],
+			[
+				"fal",
+				"false"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test/basic_test.py",
+			"settings":
+			{
+				"buffer_size": 7859,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pyOCD/board/mbed_board.py",
+			"settings":
+			{
+				"buffer_size": 10803,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pyOCD/pyDAPAccess/interface/pyusb_backend.py",
+			"settings":
+			{
+				"buffer_size": 6166,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pyOCD/tools/flash_tool.py",
+			"settings":
+			{
+				"buffer_size": 9432,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"last_filter": "replpy",
+		"selected_items":
+		[
+			[
+				"replpy",
+				"SublimeREPL: Python"
+			],
+			[
+				"utf",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"sp",
+				"SublimeREPL: Python"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"map",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Li",
+				"Package Control: Install Package"
+			],
+			[
+				"package Control",
+				"Package Control: Add Channel"
+			]
+		],
+		"width": 348.0
+	},
+	"console":
+	{
+		"height": 229.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/H/GitHub/pyOCD",
+		"/H/GitHub/pyOCD/binaries",
+		"/H/GitHub/pyOCD/pyOCD",
+		"/H/GitHub/pyOCD/pyOCD/pyDAPAccess",
+		"/H/GitHub/pyOCD/pyOCD/test/test_target",
+		"/H/GitHub/pyOCD/pyOCD/test/test_utility",
+		"/H/GitHub/pyOCD/pyOCD/tools",
+		"/H/GitHub/pyOCD/test"
+	],
+	"file_history":
+	[
+		"/H/GitHub/pyocdOld/pyOCD/pyOCD/_version.py",
+		"/H/GitHub/pyOCD/pyOCD/_version.py",
+		"/H/GitHub/pyOCD/.gitignore",
+		"/H/GitHub/pyocdOld/pyOCD/pyOCD/pyDAPAccess/cmsis_dap_core.py",
+		"/H/GitHub/pyocdOld/pyOCD/pyOCD/pyDAPAccess/dap_access_api.py",
+		"/H/GitHub/pyocdOld/pyOCD/pyOCD/pyDAPAccess/dap_access_usb.py",
+		"/D/Documents/NetSarang/Xftp/Temporary/access_20160407.log",
+		"/D/Documents/NetSarang/Xftp/Temporary/access_20160408.log",
+		"/G/论坛备份/cut_nginx_log.sh",
+		"/D/Documents/NetSarang/Xftp/Temporary/zhujibao.access [2].log",
+		"/G/论坛备份/access.log",
+		"/G/论坛备份/chuxue123.com.access.log-20141113",
+		"/C/Users/Administrator/Desktop/wdf.py",
+		"/C/Users/Administrator/Desktop/testJPEG(1).bin",
+		"/C/Users/Administrator/Desktop/testJPEG.bin",
+		"/C/Users/Administrator/Desktop/testjpeg.bin",
+		"/C/Users/Administrator/Desktop/testJPEGJPET.jpeg",
+		"/G/pythonGUI/kivyTest/kivyTest.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/tools/pyocd.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/gdbserver/gdbserver.py",
+		"/C/Users/Administrator/autorun.bat",
+		"/G/CSharp工程/摄像头调试助手/wildfire_MultiFuctionalSerial_assistant/wildfire_MultiFuctionalSerial_assistant/network/Network.xaml",
+		"/D/work/keil5/ARM/Pack/Keil/STM32F4xx_DFP/2.5.0/Keil.STM32F4xx_DFP.pdsc",
+		"/D/work/keil5/ARM/Pack/Keil/STM32F4xx_DFP/2.5.0/Utilities/CPU/cpu_utils.c",
+		"/D/work/keil5/ARM/Pack/Keil/STM32F4xx_DFP/2.5.0/Utilities/Fonts/font8.c",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/utility/cmdline.py",
+		"/D/work/keil5/ARM/Utilities/HID_Client/ReadMe.txt",
+		"/G/STM32F4/F4程序整理/11-7寸—液晶显示英文（显示任意大小文字）/11-LTDC—液晶显示英文（字库在内部FLASH）/Project/RVMDK（uv5）/BF-F429.uvprojx",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/flash/flash_stm32f103rc.py",
+		"/D/work/keil5/ARM/Pack/Keil/STM32F4xx_DFP/2.5.0/CMSIS/SVD/STM32F41x.svd",
+		"/D/work/keil5/ARM/Pack/Keil/STM32F4xx_DFP/2.5.0/package.xml",
+		"/D/work/keil5/ARM/Pack/Keil/STM32F4xx_DFP/2.5.0/CMSIS/SVD/STM32F41x.SFR",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/flash/flash_klxx.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/flash/flash.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/flash/analyzer/generate_python.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/target/cortex_m.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/target/dap.py",
+		"/D/work/keil5/ARM/Pack/Keil/STM32F4xx_DFP/2.5.0/CMSIS/SVD/STM32F40x.svd",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/flash/flash_builder.py",
+		"/D/work/keil5/ARM/Pack/Keil/STM32F4xx_DFP/2.5.0/CMSIS/SVD/STM32F40x.SFR",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/flash/analyzer/readme.txt",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/flash/analyzer/linker_script.ld",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/flash/flash_cortex_m.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/tools/flash_tool.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/target/target_stm32f103rc.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/gdbserver/gdb_websocket.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/tools/gdb_server.py",
+		"/G/STM32F4/DAP/pyOCD-master/pyOCD/board/board.py",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/G/algs4/algs4-data/movies.txt",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/User/led/bsp_led.c",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/多彩流水灯.lnp",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/多彩流水灯.htm",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/多彩流水灯.build_log.htm",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/BH-F429_多彩流水灯.dep",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/多彩流水灯.hex",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/main.d",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/多彩流水灯.bin",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/必读说明.txt",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/User/main.c",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Listing/多彩流水灯.map",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Anaconda/README.md",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/G/algs4/python/gcd/gcd.py",
+		"/G/algs4/python/class/StdIn.py",
+		"/G/algs4/python/class/data.txt",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/G/algs4/配置环境/算法（第4版）java环境配置教程—algs4.html",
+		"/G/algs4/python/hello/HelloWorld.py",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/elfInfo/多彩流水灯_axf_elfInfo_d.txt",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/elfInfo/多彩流水灯_axf_elfInfo_e.txt",
+		"/G/STM32F4/F4程序整理/1-GPIO输出—多彩流水灯/Output/多彩流水灯elfInfo.txt",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/G/STM32F4/文档/参考资料/触摸屏/gt9xx_1.8_drivers/Reference Drivers/Reference Drivers/gt9xx.c",
+		"/G/python/hello.py",
+		"/G/python/request.py",
+		"/G/python/RGB24TO16.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"G:\\STM32F4\\DAP\\pyOCD-master\\pyOCD"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ffd9",
+			"d9ff",
+			"flash",
+			"0x20000000",
+			"sram",
+			"flash_algo_debug",
+			"begin_data",
+			"auto_increment_page_size",
+			"callFunctionAndWait",
+			"analyzer",
+			"intelhex_available",
+			"mid",
+			" [",
+			"whileListIn",
+			"keyInwhileListIn",
+			"={}\".",
+			"whileListIn",
+			"print",
+			"whileListIn",
+			"hhhtest",
+			"scatter",
+			"LDR",
+			"data",
+			"section data",
+			".data",
+			"channel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test/basic_test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7859,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								975,
+								975
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 113.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pyOCD/board/mbed_board.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7149,
+								7149
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2423.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pyOCD/pyDAPAccess/interface/pyusb_backend.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2810,
+								2817
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 98.0,
+						"translation.y": 1178.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pyOCD/tools/flash_tool.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 9432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1260,
+								1260
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 636.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 228.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Anaconda Python Builder",
+	"project": "subPyocd.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bag",
+				"raw_source\\algs4\\edu\\princeton\\cs\\algs4\\Bag.java"
+			],
+			[
+				"coun",
+				"raw_source\\algs4\\edu\\princeton\\cs\\algs4\\Counter.java"
+			],
+			[
+				"map",
+				"Listing\\多彩流水灯.map"
+			],
+			[
+				"bsp_lc",
+				"User\\led\\bsp_led.c"
+			],
+			[
+				"bspc",
+				"User\\led\\bsp_led.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 268.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

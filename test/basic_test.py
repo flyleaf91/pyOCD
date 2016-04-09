@@ -217,6 +217,7 @@ if __name__ == "__main__":
     parser.add_argument('-f', help='binary file', dest="file")
     parser.add_argument('-d', '--debug', action="store_true", help='Enable debug logging')
     args = parser.parse_args()
+    args.debug = True
     level = logging.DEBUG if args.debug else logging.INFO
     logging.basicConfig(level=level)
     file = args.file
