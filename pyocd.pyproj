@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e82f61fb-c01e-4825-a881-a34b37131852}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>setup.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".eggs\README.txt" />
+    <Content Include="build\flash_tool\warnflash_tool.txt" />
+    <Content Include="build\gdb_server\warngdb_server.txt" />
+    <Content Include="build\pyocd\warnpyocd.txt" />
+    <Content Include="dev-requirements.txt" />
+    <Content Include="pyOCD\flash\analyzer\readme.txt" />
+    <Content Include="test\automated_test_result.txt" />
+    <Content Include="test\automated_test_summary.txt" />
+    <Content Include="test\gdb_test_program\readme.txt" />
+    <Content Include="test\output.txt" />
+    <Content Include="test\test_params.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="pyOCD\board\board.py" />
+    <Compile Include="pyOCD\board\mbed_board.py" />
+    <Compile Include="pyOCD\board\__init__.py" />
+    <Compile Include="pyOCD\flash\analyzer\generate_python.py" />
+    <Compile Include="pyOCD\flash\flash.py" />
+    <Compile Include="pyOCD\flash\flash_builder.py" />
+    <Compile Include="pyOCD\flash\flash_cortex_m.py" />
+    <Compile Include="pyOCD\flash\flash_k20d50m.py" />
+    <Compile Include="pyOCD\flash\flash_k22f.py" />
+    <Compile Include="pyOCD\flash\flash_k64f.py" />
+    <Compile Include="pyOCD\flash\flash_kinetis.py" />
+    <Compile Include="pyOCD\flash\flash_kl28z.py" />
+    <Compile Include="pyOCD\flash\flash_klxx.py" />
+    <Compile Include="pyOCD\flash\flash_lpc11u24.py" />
+    <Compile Include="pyOCD\flash\flash_lpc11xx_32.py" />
+    <Compile Include="pyOCD\flash\flash_lpc1768.py" />
+    <Compile Include="pyOCD\flash\flash_lpc4330.py" />
+    <Compile Include="pyOCD\flash\flash_lpc800.py" />
+    <Compile Include="pyOCD\flash\flash_lpc824.py" />
+    <Compile Include="pyOCD\flash\flash_max32600mbed.py" />
+    <Compile Include="pyOCD\flash\flash_maxwsnenv.py" />
+    <Compile Include="pyOCD\flash\flash_nrf51.py" />
+    <Compile Include="pyOCD\flash\flash_nrf52.py" />
+    <Compile Include="pyOCD\flash\flash_stm32f051.py" />
+    <Compile Include="pyOCD\flash\flash_stm32f103rc.py" />
+    <Compile Include="pyOCD\flash\flash_w7500.py" />
+    <Compile Include="pyOCD\flash\__init__.py" />
+    <Compile Include="pyOCD\gdbserver\gdbserver.py" />
+    <Compile Include="pyOCD\gdbserver\gdb_socket.py" />
+    <Compile Include="pyOCD\gdbserver\gdb_websocket.py" />
+    <Compile Include="pyOCD\gdbserver\signals.py" />
+    <Compile Include="pyOCD\gdbserver\syscall.py" />
+    <Compile Include="pyOCD\gdbserver\__init__.py" />
+    <Compile Include="pyOCD\pyDAPAccess\cmsis_dap_core.py" />
+    <Compile Include="pyOCD\pyDAPAccess\dap_access_api.py" />
+    <Compile Include="pyOCD\pyDAPAccess\dap_access_usb.py" />
+    <Compile Include="pyOCD\pyDAPAccess\interface\hidapi_backend.py" />
+    <Compile Include="pyOCD\pyDAPAccess\interface\interface.py" />
+    <Compile Include="pyOCD\pyDAPAccess\interface\pyusb_backend.py" />
+    <Compile Include="pyOCD\pyDAPAccess\interface\pywinusb_backend.py" />
+    <Compile Include="pyOCD\pyDAPAccess\interface\__init__.py" />
+    <Compile Include="pyOCD\pyDAPAccess\__init__.py" />
+    <Compile Include="pyOCD\pyocd\setup.py" />
+    <Compile Include="pyOCD\target\cortex_m.py" />
+    <Compile Include="pyOCD\target\dap.py" />
+    <Compile Include="pyOCD\target\memory_map.py" />
+    <Compile Include="pyOCD\target\semihost.py" />
+    <Compile Include="pyOCD\target\target.py" />
+    <Compile Include="pyOCD\target\target_k20d50m.py" />
+    <Compile Include="pyOCD\target\target_k22f.py" />
+    <Compile Include="pyOCD\target\target_k64f.py" />
+    <Compile Include="pyOCD\target\target_kinetis.py" />
+    <Compile Include="pyOCD\target\target_kl02z.py" />
+    <Compile Include="pyOCD\target\target_kl05z.py" />
+    <Compile Include="pyOCD\target\target_kl25z.py" />
+    <Compile Include="pyOCD\target\target_kl26z.py" />
+    <Compile Include="pyOCD\target\target_kl28z.py" />
+    <Compile Include="pyOCD\target\target_kl46z.py" />
+    <Compile Include="pyOCD\target\target_lpc11u24.py" />
+    <Compile Include="pyOCD\target\target_lpc11xx_32.py" />
+    <Compile Include="pyOCD\target\target_lpc1768.py" />
+    <Compile Include="pyOCD\target\target_lpc4330.py" />
+    <Compile Include="pyOCD\target\target_lpc800.py" />
+    <Compile Include="pyOCD\target\target_lpc824.py" />
+    <Compile Include="pyOCD\target\target_max32600mbed.py" />
+    <Compile Include="pyOCD\target\target_maxwsnenv.py" />
+    <Compile Include="pyOCD\target\target_nrf51.py" />
+    <Compile Include="pyOCD\target\target_nrf52.py" />
+    <Compile Include="pyOCD\target\target_stm32f051.py" />
+    <Compile Include="pyOCD\target\target_stm32f103rc.py" />
+    <Compile Include="pyOCD\target\target_w7500.py" />
+    <Compile Include="pyOCD\target\__init__.py" />
+    <Compile Include="pyOCD\test\test_target\test_semihosting.py" />
+    <Compile Include="pyOCD\test\test_utility\test_cmdline.py" />
+    <Compile Include="pyOCD\test\test_utility\test_conversion.py" />
+    <Compile Include="pyOCD\tools\flash_tool.py" />
+    <Compile Include="pyOCD\tools\gdb_server.py" />
+    <Compile Include="pyOCD\tools\pyocd.py" />
+    <Compile Include="pyOCD\tools\__init__.py" />
+    <Compile Include="pyOCD\utility\cmdline.py" />
+    <Compile Include="pyOCD\utility\conversion.py" />
+    <Compile Include="pyOCD\utility\__init__.py" />
+    <Compile Include="pyOCD\_version.py" />
+    <Compile Include="pyOCD\__init__.py" />
+    <Compile Include="setup.py" />
+    <Compile Include="test\automated_test.py" />
+    <Compile Include="test\basic_test.py" />
+    <Compile Include="test\blank_test.py" />
+    <Compile Include="test\cortex_test.py" />
+    <Compile Include="test\flash_test.py" />
+    <Compile Include="test\gdb_script.py" />
+    <Compile Include="test\gdb_server_json_test.py" />
+    <Compile Include="test\gdb_test.py" />
+    <Compile Include="test\speed_test.py" />
+    <Compile Include="test\test_util.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".eggs" />
+    <Folder Include="build\" />
+    <Folder Include="build\flash_tool" />
+    <Folder Include="build\gdb_server" />
+    <Folder Include="build\pyocd" />
+    <Folder Include="pyOCD" />
+    <Folder Include="pyOCD\board" />
+    <Folder Include="pyOCD\flash" />
+    <Folder Include="pyOCD\flash\analyzer" />
+    <Folder Include="pyOCD\gdbserver" />
+    <Folder Include="pyOCD\pyDAPAccess" />
+    <Folder Include="pyOCD\pyDAPAccess\interface" />
+    <Folder Include="pyOCD\pyocd" />
+    <Folder Include="pyOCD\target" />
+    <Folder Include="pyOCD\test\" />
+    <Folder Include="pyOCD\test\test_target" />
+    <Folder Include="pyOCD\test\test_utility" />
+    <Folder Include="pyOCD\tools" />
+    <Folder Include="pyOCD\utility" />
+    <Folder Include="test" />
+    <Folder Include="test\gdb_test_program" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

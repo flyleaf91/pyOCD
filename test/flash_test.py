@@ -406,6 +406,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='pyOCD flash test')
     parser.add_argument('-d', '--debug', action="store_true", help='Enable debug logging')
     args = parser.parse_args()
+    args.debug = True
     level = logging.DEBUG if args.debug else logging.INFO
     logging.basicConfig(level=level)
     # Set to debug to print some of the decisions made while flashing
