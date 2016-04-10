@@ -28,6 +28,22 @@
 			}
 		},
 		{
+			"file": "pyOCD/tools/flash_tool.py",
+			"settings":
+			{
+				"buffer_size": 9432,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pyOCD/board/board.py",
+			"settings":
+			{
+				"buffer_size": 2285,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "pyOCD/board/mbed_board.py",
 			"settings":
 			{
@@ -36,18 +52,68 @@
 			}
 		},
 		{
-			"file": "pyOCD/pyDAPAccess/interface/pyusb_backend.py",
+			"file": "pyOCD/pyDAPAccess/dap_access_usb.py",
 			"settings":
 			{
-				"buffer_size": 6166,
+				"buffer_size": 26324,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "pyOCD/tools/flash_tool.py",
+			"file": "/D/work/keil5/ARM/Pack/Keil/STM32F1xx_DFP/1.1.0/Keil.STM32F1xx_DFP.pdsc",
 			"settings":
 			{
-				"buffer_size": 9432,
+				"buffer_size": 220640,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 170 files for \"AHB IDR\"\n\nH:\\GitHub\\pyOCD\\pyOCD\\target\\cortex_m.py:\n  386                  # read/write errors.\n  387                  self.auto_increment_page_size = 0x400\n  388:                 logging.warning(\"Unknown AHB IDR: 0x%x\" % ahb_idr)\n  389  \n  390          if bus_accessible:\n\n1 match in 1 file\n\n\nSearching 170 files for \"DP_REG\"\n\nH:\\GitHub\\pyOCD\\pyOCD\\target\\cortex_m.py:\n   18  \n   19  from .target import Target\n   20: from pyOCD.target.dap import (DP_REG, AP_REG, Dap)\n   21  from pyOCD.pyDAPAccess import DAPAccess\n   22  from ..gdbserver import signals\n   ..\n  366  \n  367              # select bank 0 (to access DRW and TAR)\n  368:             self.dap.writeDP(DP_REG['SELECT'], 0)\n  369:             self.dap.writeDP(DP_REG['CTRL_STAT'], CortexM.CSYSPWRUPREQ | CortexM.CDBGPWRUPREQ)\n  370  \n  371              while True:\n  372:                 r = self.dap.readDP(DP_REG['CTRL_STAT'])\n  373                  if (r & (CortexM.CDBGPWRUPACK | CortexM.CSYSPWRUPACK)) == (CortexM.CDBGPWRUPACK | CortexM.CSYSPWRUPACK):\n  374                      break\n  375  \n  376:             self.dap.writeDP(DP_REG['CTRL_STAT'], CortexM.CSYSPWRUPREQ | CortexM.CDBGPWRUPREQ | CortexM.TRNNORMAL | CortexM.MASKLANE)\n  377:             self.dap.writeDP(DP_REG['SELECT'], 0)\n  378  \n  379              ahb_idr = self.dap.readAP(AP_REG['IDR'])\n  ...\n  499          return the IDCODE of the core\n  500          \"\"\"\n  501:         self.idcode = self.dap.readDP(DP_REG['IDCODE'])\n  502          return self.idcode\n  503  \n\nH:\\GitHub\\pyOCD\\pyOCD\\target\\dap.py:\n   21  \n   22  # !! This value are A[2:3] and not A[3:2]\n   23: DP_REG = {'IDCODE': DAPAccess.REG.DP_0x0,\n   24            'ABORT': DAPAccess.REG.DP_0x0,\n   25            'CTRL_STAT': DAPAccess.REG.DP_0x4,\n   ..\n  184      def writeDP(self, addr, data):\n  185          assert addr in DAPAccess.REG\n  186:         if addr == DP_REG['SELECT']:\n  187              if data == self.dp_select:\n  188                  return\n  ...\n  200          ap_sel = addr & 0xff000000\n  201          bank_sel = addr & APBANKSEL\n  202:         self.writeDP(DP_REG['SELECT'], ap_sel | bank_sel)\n  203  \n  204          if addr == AP_REG['CSW']:\n  ...\n  225              ap_sel = addr & 0xff000000\n  226              bank_sel = addr & APBANKSEL\n  227:             self.writeDP(DP_REG['SELECT'], ap_sel | bank_sel)\n  228              result_cb = self.link.read_reg(ap_reg, now=False)\n  229          except DAPAccess.Error as error:\n  ...\n  256              self.link.write_reg(DAPAccess.REG.DP_0x0, (1 << 2))\n  257          elif mode == DAPAccess.PORT.JTAG:\n  258:             self.link.write_reg(DP_REG['CTRL_STAT'], CTRLSTAT_STICKYERR)\n  259          else:\n  260              assert False\n\n12 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 2758,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "pyOCD/target/dap.py",
+			"settings":
+			{
+				"buffer_size": 7715,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pyOCD/pyDAPAccess/dap_access_api.py",
+			"settings":
+			{
+				"buffer_size": 5018,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pyOCD/target/cortex_m.py",
+			"settings":
+			{
+				"buffer_size": 47808,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pyOCD/pyDAPAccess/interface/hidapi_backend.py",
+			"settings":
+			{
+				"buffer_size": 3716,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pyOCD/pyDAPAccess/interface/pyusb_backend.py",
+			"settings":
+			{
+				"buffer_size": 6166,
 				"line_ending": "Unix"
 			}
 		}
@@ -162,11 +228,9 @@
 	"expanded_folders":
 	[
 		"/H/GitHub/pyOCD",
-		"/H/GitHub/pyOCD/binaries",
 		"/H/GitHub/pyOCD/pyOCD",
 		"/H/GitHub/pyOCD/pyOCD/pyDAPAccess",
-		"/H/GitHub/pyOCD/pyOCD/test/test_target",
-		"/H/GitHub/pyOCD/pyOCD/test/test_utility",
+		"/H/GitHub/pyOCD/pyOCD/target",
 		"/H/GitHub/pyOCD/pyOCD/tools",
 		"/H/GitHub/pyOCD/test"
 	],
@@ -256,13 +320,14 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"H:\\GitHub\\pyOCD",
 			"G:\\STM32F4\\DAP\\pyOCD-master\\pyOCD"
 		]
 	},
@@ -271,6 +336,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"DP_REG",
+			"AHB IDR",
 			"ffd9",
 			"d9ff",
 			"flash",
@@ -314,7 +381,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -330,8 +397,8 @@
 						"selection":
 						[
 							[
-								975,
-								975
+								970,
+								970
 							]
 						],
 						"settings":
@@ -342,14 +409,76 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 113.0,
+						"translation.y": 124.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "pyOCD/tools/flash_tool.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 9432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1096,
+								1096
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pyOCD/board/board.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "pyOCD/board/mbed_board.py",
 					"semi_transient": false,
 					"settings":
@@ -361,8 +490,8 @@
 						"selection":
 						[
 							[
-								7149,
-								7149
+								7461,
+								7461
 							]
 						],
 						"settings":
@@ -373,14 +502,294 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2423.0,
+						"translation.y": 2586.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pyOCD/pyDAPAccess/dap_access_usb.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17726,
+								17729
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9235.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/work/keil5/ARM/Pack/Keil/STM32F1xx_DFP/1.1.0/Keil.STM32F1xx_DFP.pdsc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 220640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26640,
+								26640
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2377.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2758,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										230,
+										237
+									],
+									[
+										474,
+										480
+									],
+									[
+										690,
+										696
+									],
+									[
+										747,
+										753
+									],
+									[
+										895,
+										901
+									],
+									[
+										1121,
+										1127
+									],
+									[
+										1262,
+										1268
+									],
+									[
+										1466,
+										1472
+									],
+									[
+										1628,
+										1634
+									],
+									[
+										1888,
+										1894
+									],
+									[
+										2101,
+										2107
+									],
+									[
+										2318,
+										2324
+									],
+									[
+										2637,
+										2643
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1631,
+								1631
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 211.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "pyOCD/target/dap.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								758,
+								758
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "pyOCD/pyDAPAccess/dap_access_api.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								820,
+								820
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 115.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 9,
+					"file": "pyOCD/target/cortex_m.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18922,
+								18922
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1879.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "pyOCD/pyDAPAccess/interface/hidapi_backend.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3448,
+								3448
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1712.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
 					"file": "pyOCD/pyDAPAccess/interface/pyusb_backend.py",
 					"semi_transient": false,
 					"settings":
@@ -407,38 +816,7 @@
 						"translation.y": 1178.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "pyOCD/tools/flash_tool.py",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 9432,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1260,
-								1260
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 636.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 11,
 					"type": "text"
 				}
 			]

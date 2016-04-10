@@ -1,0 +1,32 @@
+
+
+------ Speed Test Performance ------
+Target    Write Speed     Read Speed      
+
+stm32f103rc49.913177 KB/s  46.711337 KB/s  
+
+
+
+------ Analyzer Performance ------
+Target    Analyzer    Rate              Time              
+
+stm32f103rcNone        Fail              Fail              
+
+
+
+------ Test Rate ------
+Target    Chip Erase          Page Erase          Page Erase (Same data)
+
+stm32f103rcFail                Fail                Fail                
+
+Target         Test                 Result         Time           
+
+stm32f103rc    Basic Test           Pass           4.79499983788  
+stm32f103rc    Gdb Server Json Test Fail           1.25500011444  
+stm32f103rc    Speed Test           Pass           13.5959999561  
+stm32f103rc    Cortex Test          Pass           2.42599987984  
+stm32f103rc    Flash Test           Fail           1.89600014687  
+stm32f103rc    Gdb Test             Fail           0.843999862671 
+
+Test Time: 24.8159999847
+One or more tests has failed!
